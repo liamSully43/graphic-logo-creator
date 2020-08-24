@@ -1,0 +1,70 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<title>Logo Creator</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/70314bd783.js" SameSite=Secure></script>
+		<link href="lc css.css" type="text/css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="Assets/logo-creator-favicon.png">
+	</head>
+	<body>
+		<header>
+			<i class="fas fa-eraser fa-3x"></i>
+			<h1 class="title">Graphic Logo Creator</h1>
+		</header>
+		<section class="row main-body">
+			<div class="tool-bar col-lg-3 col-sm-12">
+				<div class="controls row">
+					<input class="col-lg-2 col-md-2 col-sm-1 mx-auto height" type="text" placeholder="Height" title="Height" disabled>
+					<input class="col-lg-2 col-md-2 col-sm-1 mx-auto width" type="text" placeholder="Width" title="Width" disabled>
+					<input class="col-lg-2 col-md-2 col-sm-1 mx-auto angle" type="text" placeholder="Angle" title="Angle" disabled>
+					<input class="col-lg-2 col-md-2 col-sm-1 mx-auto alignment" type="text" placeholder="Alignment" title="Vertical Alignment" disabled>
+					<input class="col-lg-2 col-md-2 col-sm-1 mx-auto border" type="text" placeholder="Border" title="Border Width" disabled>
+				</div>
+				<button class="print col-lg-12 mx-auto" ><i class="fas fa-print"></i></button>
+				<div class="shapes-container row">
+					<span class="col-lg-4 col-md-2 col-sm-1">
+						<div class="square square-example"></div>
+					</span>
+					<span class="col-lg-4 col-md-2 col-sm-1">
+						<div class="circle circle-example"></div>
+					</span>
+					<span class="col-lg-4 col-md-2 col-sm-1">
+						<div class="triangle triangle-example"></div>
+					</span>
+					<span class="col-lg-6 col-md-2 col-sm-1">
+						<div class="square-border square-border-example"></div>
+					</span>
+					<span class="col-lg-6 col-md-2 col-sm-1">
+						<div class="circle-border circle-border-example"></div>
+					</span>
+				</div>
+				<div class="row colour-picker-row">
+					<p class="col-lg-4 col-md-2 colour-picker-title">Colour Selector:</p>
+					<input type="color" class="col-lg-8 col-md-10 col-sm-12 colour-picker" value="#212121">
+				</div>
+				<div class="row col-lg-12 col-md-4 used-shapes">
+					<div class="col-lg-12 row shapes background selected" id="0">
+						<div class="col-lg-3 col-md-3 col-sm-2">
+							<div class="square"></div>
+						</div>
+						<p class="col-lg-5 col-md-5 col-sm-6">Background</p>
+						<i class="fas fa-eye col-lg-2 col-md-2 col-sm-2 fa-2x perm-disabled"></i>
+						<i class="fas fa-trash-alt col-lg-2 col-md-2 col-sm-2 fa-2x perm-disabled"></i>
+					</div>
+				</div>
+			</div>
+			<section class="col-lg-9 col-md-7 0 canvas">
+			</section>
+		</section>
+	</body>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="lc js.js" type="text/JavaScript"></script>
+</html>
